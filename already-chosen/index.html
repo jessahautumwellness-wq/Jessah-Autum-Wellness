@@ -132,14 +132,23 @@ body { font-family: 'Promenade', serif; background: var(--cream); color: var(--i
         <div class="get-item"><span class="get-dot">✦</span><span class="get-text">The honest difference between a woman who needs to be chosen and <em>a woman who already is</em></span></div>
         <div class="get-item"><span class="get-dot">✦</span><span class="get-text">Three moves you can start today — <em>rooted in neuroscience, not willpower</em></span></div>
       </div>
-      <div class="form-wrap">
-        <label class="form-label" for="fname">First name</label>
-        <input class="form-input" type="text" id="fname" name="fname" placeholder="Your first name..." required>
-        <label class="form-label" for="email">Email address</label>
-        <input class="form-input" type="email" id="email" name="email" placeholder="Your email address..." required>
-        <button type="button" class="form-btn" onclick="showThankYou()">Send me the guide →</button>
-        <p class="form-meta">Free. No spam. Unsubscribe anytime.</p>
-      </div>
+   <div class="form-wrap">
+  <iframe
+    src="https://api.leadconnectorhq.com/widget/form/UlFPzv131mN1oECvaGz5"
+    style="width:100%;height:434px;border:none;border-radius:8px"
+    id="inline-UlFPzv131mN1oECvaGz5"
+    data-layout="{'id':'INLINE'}"
+    data-trigger-type="alwaysShow"
+    data-activation-type="alwaysActivated"
+    data-deactivation-type="neverDeactivate"
+    data-form-name="Already Chosen Opt-In"
+    data-height="434"
+    data-layout-iframe-id="inline-UlFPzv131mN1oECvaGz5"
+    data-form-id="UlFPzv131mN1oECvaGz5"
+    title="Already Chosen Opt-In">
+  </iframe>
+</div>
+<script src="https://link.msgsndr.com/js/form_embed.js"></script>
     </div>
 
     <div class="optin-photo">
@@ -191,20 +200,6 @@ body { font-family: 'Promenade', serif; background: var(--cream); color: var(--i
 
   <div class="footer"><p>© 2026 Jessah Autum · The Already Enough Society · jessahautumwellness.com</p></div>
 </div>
-
-<script>
-function showThankYou() {
-  var fname = document.getElementById('fname').value.trim();
-  var email = document.getElementById('email').value.trim();
-  if (!fname || !email) {
-    alert('Please fill in your name and email to continue.');
-    return;
-  }
-  document.getElementById('page-optin').style.display = 'none';
-  document.getElementById('page-thankyou').style.display = 'block';
-  window.scrollTo(0, 0);
-}
-</script>
 
 </body>
 </html>
